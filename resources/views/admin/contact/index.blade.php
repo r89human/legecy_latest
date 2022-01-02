@@ -16,7 +16,7 @@
                     </h2>
                 </div>
                 <div class="body table-responsive">
-                    <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                    <table class="table table-events table100 ver1">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -34,7 +34,7 @@
                         @if ($entries->count())
                             @foreach ($entries as $entry)
                             <tr>
-                                <th scope="row">{{$index}} </th>
+                                <td scope="row">{{$index}} </td>
                                 <td><a href="{{ route('admin::contacts.show',  $entry->id) }}">{{$entry->name}} </a></td>
                                 <td>{{$entry->email}}</td>
                                 <td>{{$entry->phone}}</td>

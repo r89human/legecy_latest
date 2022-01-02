@@ -479,7 +479,15 @@
         .table100.ver5 .ps__rail-y .ps__thumb-y::before {
             background-color: #cccccc;
         }
+        .table100-ver6 thead th {
 
+            font-family: Lato-Bold;
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.4;
+border-radius: 10px;
+            background-color: #6c7ae0;
+        }
     </style>
 </head>
 <!-- End of Head Section -->

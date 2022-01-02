@@ -56,13 +56,15 @@ class EventController extends Controller
      */
     public function index()
     {
+        // $records = $this->googleSheet();
+        // dd($records); 
         $events        = Event::orderBy('id', 'asc')->get();
         $yachts        = Product::orderBy('id', 'asc')->get();
         $users         = User::orderBy('id', 'asc')->get();
         $locations     = Location::orderBy('id', 'asc')->get();
         $notifications = Notification::all();
 
-        $this->addGoogleSheetRecords();
+        //$this->addGoogleSheetRecords();
 
         return view('admin.events.index', [
             'notifications' => $notifications,

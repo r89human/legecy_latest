@@ -4,7 +4,10 @@
 @stop
 @section('body-class', 'home')
 @section('content')
-<div class="home-banner row" style="background-image: url({{ asset('images/home-banner-private-yacht-charters.jpg') }});" title="Private Yacht Charters and Events in San Diego Bay">
+<style>
+    .row{margin-left:0px}
+    </style>
+<div class="home-banner row" style="margin-left: 0px; background-image: url({{ asset('images/home-banner-private-yacht-charters.jpg') }});" title="Private Yacht Charters and Events in San Diego Bay">
     <div class="transparent">
         <div class="wrapper">
             <div class="banner-description">

@@ -10,7 +10,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="body table-responsive">
-                    <table class="table">
+                    <table class="table table-events table100 ver1">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -25,7 +25,7 @@
                         @if ($entries->count())
                             @foreach ($entries as $entry)
                             <tr>
-                                <th scope="row">{{$index}} </th>
+                                <td scope="row">{{$index}} </td>
                                 <td>{{$entry->addons_name}}</td>
                                 <td><i class="material-icons">attach_money</i><span class="icon-name">{{$entry->hprice}}</span></td>
                                 <td><i class="material-icons">attach_money</i><span class="icon-name">{{$entry->fprice}}</span></td>

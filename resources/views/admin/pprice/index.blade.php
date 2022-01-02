@@ -10,7 +10,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="body table-responsive">
-                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                    <table class="table table-events table100 ver1">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -26,8 +26,8 @@
                         @if ($entries->count())
                             @foreach ($entries as $entry)
                             <tr>
-                                <th scope="row">{{$index}}</th>
-                                <th scope="row">{{$entry->product->product_name}}</th>
+                                <td scope="row">{{$index}}</td>
+                                <td scope="row">{{$entry->product->product_name}}</td>
                                  <td> @if ($entry->day == 'sa') Saturday @elseif($entry->day == 'su') Sunday @elseif($entry->day == 'mo') Monday @elseif($entry->day == 'tu') Tuesaday  @elseif($entry->day == 'we') Wednesday @elseif($entry->day == 'th') Thursday @elseif($entry->day == 'fr') Friday @else Holiday @endif</td>
                                 <td> @if ($entry->date){{$entry->date}}@else - @endif</td>
                                 <td><i class="material-icons">attach_money</i><span class="icon-name">{{$entry->price}}</span></td>
